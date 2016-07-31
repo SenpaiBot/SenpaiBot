@@ -1,0 +1,9 @@
+var Discord = require("discord.js");
+
+var mybot = new Discord.Client();
+
+mybot.on("message", function(message) {
+    if(message.content === "Notice me Senpai") {
+        mybot.reply(message, "**You have been noticed.");
+    }
+});
